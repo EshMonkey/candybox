@@ -1,12 +1,17 @@
-var candies = {
+// http://candies.aniwey.net/
+// enter in console 
+candies.nbrOwned = Number.POSITIVE_INFINITY;
+lollipops.nbrOwned = Number.POSITIVE_INFINITY;
+quest.setMaxLandOrder( 20 );
+chocolateBars.nbrOwned = 10;
 
-    // Variables
-    nbrOwned : 0,
-    nbrEaten : 0,
-    nbrThrown : 0,
-    nbrTotal : 0, // The total number we earned in all times
-    candiesPerSecond : 1,
-    
+sword.specialPower = 100;
+
+for ( var potionName in potions.list ) {
+  var potion = potions.list[ potionName ];
+  potion.nbrOwned = Number.POSITIVE_INFINITY;
+  potion.shown = true;
+}
     // Functions
     onload : function(){
         candies.setNbrOwned(0); // We first have 0 candies
